@@ -34,7 +34,7 @@ class StatsServiceTest {
     void testMonthWithMinSale() {
         StatsService statsService = new StatsService();
         final int expected = 9;
-        assertEquals(expected, statsService.monthWithMinSale(NUMBERS));
+        assertEquals(expected, statsService.getMonthIndexWithMinSale(NUMBERS));
     }
 
     @Test

@@ -1,8 +1,5 @@
 package ru.testing.statistics;
 
-import java.math.BigDecimal;
-import java.math.RoundingMode;
-
 public class StatsService {
 
     // Сумма покупок
@@ -16,9 +13,7 @@ public class StatsService {
 
     // Среднее значение продаж по месяцам, учтены дробные значения
     double salesAverage(int[] sales) {
-        BigDecimal decimalSum = new BigDecimal(salesSum(sales));
-        BigDecimal decimalLength = new BigDecimal(sales.length);
-        return decimalSum.divide(decimalLength, 2, RoundingMode.HALF_UP).doubleValue();
+        return Math.round((double) salesSum(sales) / sales.length);
     }
 
     // Индекс месяца с максимальной выручкой

@@ -18,7 +18,7 @@ class StatsServiceTest {
     public static Stream<Arguments> averageArguments() {
         return Stream.of(
                 Arguments.of(new int[] {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18}, 15.0),
-                Arguments.of(new int[] {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 16}, 14.83)
+                Arguments.of(new int[] {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 16}, 15.0)
         );
     }
 
